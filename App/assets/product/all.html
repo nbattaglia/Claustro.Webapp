@@ -1,0 +1,27 @@
+
+<div class="jumbotron col-md-8 col-md-push-2">
+  <h2>Product list!</h2>
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="p in vm.products | filter:filterVal">
+
+        <td>{{p.name}}</td>
+        <td>{{p.quantity}}</td>
+        <td>{{p.price}}</td>
+        <td>
+          <a class="btn btn-default navbar-btn" href="#/products/edit/{{p.id}}"><i class="glyphicon glyphicon-pencil"></i></a>
+         <a class="btn btn-default navbar-btn"><i class="glyphicon glyphicon-trash" ng-click="vm.delete(p.id)"></i></a> 
+         </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

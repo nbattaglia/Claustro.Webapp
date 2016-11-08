@@ -1,0 +1,27 @@
+<div class="jumbotron col-md-8 col-md-push-2">
+  <h2>{{action}} Product</h2>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Product Name</label>
+      <input type="text" class="form-control" id="f1" aria-describedby="productHelp" placeholder="Name" ng-model="vm.product.name" required>
+      <small id="productHelp" class="form-text text-muted">Please, describe the new product</small>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Price</label>
+      <input type="text" class="form-control" id="f2" placeholder="price" ng-model="vm.product.price" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Quantity</label>
+      <input type="text" class="form-control" id="f3" placeholder="Quantity" ng-model="vm.product.quantity"  required>
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea">Description</label>
+      <textarea class="form-control" id="exampleTextarea" rows="4" ng-model="vm.product.description" ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" ng-click="vm.save()";>Submit</button>
+  </form>
+
+</div>

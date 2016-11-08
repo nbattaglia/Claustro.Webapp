@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UAI</title>
+
+	<!-- Mobile view -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex,nofollow">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  	<!--<link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">-->
+
+	<!-- Customs styles 	 -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body ng-app="claustroSample" ng-controller="MainController" >
+
+	<div >
+		  <main>
+        <div class="container-fluid">
+            <div ng-include="'assets/views/partials/topnav.html'" ng-init=""></div>
+
+
+						<div class="fluid-container">
+
+						    <div ng-view class=""></div>
+
+						</div>
+
+
+            <div ng-include src="'assets/views/partials/footer.html'"></div>
+        </div>
+
+    </main>
+
+
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!--<script src="bower_components/materialize/dist/js/materialize.min.js"></script>-->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/lodash/dist/lodash.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/ngstorage/ngstorage.js"></script>
+	<script src="bower_components/angular-jwt/dist/angular-jwt.min.js"></script>
+
+
+	<script src="assets/js/app.js" ></script>
+  <script src="assets/js/app.config.js" ></script>
+	<!-- services & directives -->
+	<script src="assets/js/directives/theme.directives.js" ></script>
+	<script src="assets/js/services/authService.js" ></script>
+	<script src="assets/product/productsService.js" ></script>
+
+	<!-- controllers -->
+	<script src="assets/js/MainController.js" ></script>
+	<script src="assets/home/HomeController.js" ></script>
+	<script src="assets/login/LoginController.js" ></script>
+	<script src="assets/profile/ProfileController.js" ></script>
+	<script src="assets/product/ProductController.js" ></script>
+
+
+
+</body>
+
+</html>
