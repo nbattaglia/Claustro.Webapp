@@ -1,12 +1,15 @@
 app.config(function($routeProvider, $locationProvider,$sessionStorageProvider,jwtInterceptorProvider, $httpProvider,jwtOptionsProvider) {
   $sessionStorageProvider.setKeyPrefix('uai-');
 
-      jwtOptionsProvider.config({ whiteListedDomains: ['localhost','uai-claustro-webapp.mybluemix.net']});
+    //  jwtOptionsProvider.config({ whiteListedDomains: ['localhost','uai-claustro-webapp.mybluemix.net']});
 
           jwtInterceptorProvider.tokenGetter = function () {
-              return $sessionStorageProvider.get('token');
+              var tk= $sessionStorageProvider.get('token');
+              return tk;
           };
 
+
+          $httpProvider.defaults.useXDomain = true;
           $httpProvider.interceptors.push('jwtInterceptor');
 
           //para hacer algun tratamiento especial sobre request/response
