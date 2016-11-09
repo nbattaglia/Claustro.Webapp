@@ -1,3 +1,4 @@
 node_modules
 .env
 load.bat
+App/bower_components/

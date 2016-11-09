@@ -1,7 +1,7 @@
 {
   "name": "ClaustroSample",
   "authors": [
-    "Nicolás Battaglia <ing.nicolas.battaglia@gmail.com>"
+    "Nicolás Battaglia <nicolas.battaglia@uai.edu.ar>"
   ],
   "description": "Ejemplo app web para reunion de claustro",
   "main": "index.html",
@@ -24,4 +24,5 @@
     "angular-jwt": "^0.1.3",
     "ngstorage": "^0.3.11"
   }
+
 }

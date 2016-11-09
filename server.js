@@ -5,6 +5,7 @@ var app = express();
 var port = process.env.PORT || 3000 ;
 // Public path configuration
 app.use(express.static(__dirname + '/App'));
+//app.use('/bower_components',  express.static( path.join(__dirname, '/bower_components')));
 // parse application/x-www-form-urlencoded
 
 // Start App
