@@ -1,7 +1,7 @@
 app.config(function($routeProvider, $locationProvider,$sessionStorageProvider,jwtInterceptorProvider, $httpProvider,jwtOptionsProvider) {
   $sessionStorageProvider.setKeyPrefix('uai-');
 
-      jwtOptionsProvider.config({ whiteListedDomains: ['localhost']});
+      jwtOptionsProvider.config({ whiteListedDomains: ['localhost','uai-claustro-webapp.mybluemix.net']});
 
           jwtInterceptorProvider.tokenGetter = function () {
               return $sessionStorageProvider.get('token');
