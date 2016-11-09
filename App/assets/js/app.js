@@ -1,6 +1,6 @@
 
 var app  = angular.module('claustroSample',['ngRoute','angular-jwt','ngStorage']);
-app.constant("apiUrl", "http://localhost:5000/api/");
+app.constant("apiUrl", "http://uai-claustro-webapi.mybluemix.net//api/");
 
 app.factory('authHttpResponseInterceptor', ['$q', '$location', '$rootScope', function ($q, $location, $rootScope) {
        return {
